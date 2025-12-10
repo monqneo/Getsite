@@ -1,0 +1,5 @@
+{
+  "name": "EvoluTON",
+  "description": "Децентрализованный протокол управления ликвидностью на TON. Staking, Bonding и AI-трейдинг.",
+  "requestFramePermissions": []
+}
