@@ -3,64 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="EvoluTON: Decentralized Liquidity Protocol on TON. Staking, Bonding, and AI Trading. Explore Web3 Quantum DeFi." />
-    <meta name="keywords" content="TON, DeFi, Staking, Bonding, AI Trading, Liquidity Protocol, Web3" />
-    <meta name="author" content="EvoluTON Team" />
-    <title>EvoluTON | Web3 Quantum DeFi</title>
+    <meta name="description" content="НагваЛаб — курсы саморазвития на основе учения Дона Хуана, книг Карлоса Кастанеды, ноэтики и современных технологий осознания." />
+    <meta name="keywords" content="Кастанеда, Дон Хуан, саморазвитие, ноэтика, тенсегрити, сновидение, сталкинг, осознанность, курсы, путь воина" />
+    <meta name="author" content="НагваЛаб" />
+    <title>НагваЛаб | Путь Воина Знания</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
-      /* --- Определение Переменных (Палитра Логотипа) --- */
       :root {
-          /* Основные цвета фона */
-          --bg-deep: #02020b; /* Самый глубокий черный/синий */
-          --bg-surface: rgba(10, 10, 31, 0.6); /* Цвет для карточек и блоков */
-          
-          /* Неоновые акценты из логотипа */
-          --neon-cyan: #00f7ff;
-          --neon-purple: #9d00ff;
-          --neon-pink: #ff00e6;
-          
-          /* Текст */
+          --bg-deep: #080812;
+          --bg-surface: rgba(14, 14, 36, 0.7);
+
+          --neon-pink: #ff2d78;
+          --neon-purple: #a855f7;
+          --neon-blue: #3b82f6;
+          --neon-cyan: #06b6d4;
+
           --text-primary: #ffffff;
-          --text-secondary: #a3a3d3;
-          --text-muted: #5e5e80;
-          
-          /* Градиенты */
-          --gradient-main: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple), var(--neon-pink));
-          --gradient-hover: linear-gradient(135deg, var(--neon-pink), var(--neon-cyan));
-          --gradient-dark: linear-gradient(180deg, rgba(2,2,11,0) 0%, #02020b 100%);
+          --text-secondary: #b0b0d0;
+          --text-muted: #6b6b8a;
 
-          /* Эффекты свечения */
-          --glow-cyan: 0 0 15px rgba(0, 247, 255, 0.4);
-          --glow-purple: 0 0 20px rgba(157, 0, 255, 0.4);
-          --glow-pink: 0 0 20px rgba(255, 0, 230, 0.4);
-          --glow-mix: 0 0 25px rgba(0, 247, 255, 0.3), 0 0 10px rgba(255, 0, 230, 0.3);
+          --gradient-main: linear-gradient(135deg, var(--neon-pink), var(--neon-purple), var(--neon-blue));
+          --gradient-hover: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+          --gradient-dark: linear-gradient(180deg, rgba(8,8,18,0) 0%, #080812 100%);
 
-          /* Шрифты */
-          --font-tech: 'Orbitron', sans-serif; /* Для заголовков */
-          --font-body: 'Outfit', sans-serif;   /* Для основного текста */
+          --glow-pink: 0 0 20px rgba(255, 45, 120, 0.4);
+          --glow-purple: 0 0 20px rgba(168, 85, 247, 0.4);
+          --glow-blue: 0 0 20px rgba(59, 130, 246, 0.4);
+          --glow-mix: 0 0 25px rgba(255, 45, 120, 0.3), 0 0 10px rgba(168, 85, 247, 0.3);
+
+          --font-tech: 'Orbitron', sans-serif;
+          --font-body: 'Outfit', sans-serif;
       }
 
-      /* --- Базовые Стили и Фон --- */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
-          margin: 0;
           background-color: var(--bg-deep);
           color: var(--text-primary);
           font-family: var(--font-body);
           overflow-x: hidden;
-          /* Создаем эффект цифровой сетки на фоне */
-          background-image: 
-              linear-gradient(rgba(0, 247, 255, 0.03) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0, 247, 255, 0.03) 1px, transparent 1px);
-          background-size: 40px 40px;
+          background-image:
+              linear-gradient(rgba(168, 85, 247, 0.02) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(168, 85, 247, 0.02) 1px, transparent 1px);
+          background-size: 50px 50px;
           position: relative;
       }
 
-      /* Добавляем "сканирующую линию" на фон для динамики */
       body::after {
           content: "";
           position: fixed;
@@ -68,130 +68,196 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(transparent, rgba(0, 247, 255, 0.05), transparent);
-          animation: scanline 8s linear infinite;
+          background: linear-gradient(transparent, rgba(168, 85, 247, 0.04), transparent);
+          animation: scanline 10s linear infinite;
           pointer-events: none;
-          z-index: 9999; 
-          pointer-events: none;
-          opacity: 0.5;
+          z-index: 9999;
+          opacity: 0.4;
       }
 
-      /* --- Типографика и Заголовки --- */
       h1, h2, h3, h4, h5, h6 {
           font-family: var(--font-tech);
           text-transform: uppercase;
           letter-spacing: 1px;
       }
 
-      /* Класс для текста с градиентом как в логотипе EvoluTON */
       .gradient-text {
           background: var(--gradient-main);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           font-weight: 700;
-          filter: drop-shadow(0 0 2px rgba(0, 247, 255, 0.3));
+          filter: drop-shadow(0 0 2px rgba(255, 45, 120, 0.3));
       }
 
-      .text-neon-cyan { color: var(--neon-cyan); text-shadow: 0 0 5px rgba(0, 247, 255, 0.5); }
-      .text-neon-purple { color: var(--neon-purple); text-shadow: 0 0 5px rgba(157, 0, 255, 0.5); }
-      .text-neon-pink { color: var(--neon-pink); text-shadow: 0 0 5px rgba(255, 0, 230, 0.5); }
+      .text-neon-pink { color: var(--neon-pink); text-shadow: 0 0 5px rgba(255, 45, 120, 0.5); }
+      .text-neon-purple { color: var(--neon-purple); text-shadow: 0 0 5px rgba(168, 85, 247, 0.5); }
+      .text-neon-blue { color: var(--neon-blue); text-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
 
-      /* --- Активные Элементы: Кнопки (Web3 Стиль) --- */
-      .btn-web3 {
+      .btn-primary {
           position: relative;
           font-family: var(--font-tech);
           font-weight: bold;
-          color: var(--neon-cyan);
-          background: rgba(0, 247, 255, 0.05);
-          border: 1px solid var(--neon-cyan);
+          background: var(--gradient-main);
+          color: #fff;
+          border: none;
           cursor: pointer;
           text-transform: uppercase;
           letter-spacing: 1px;
           transition: all 0.3s ease;
           overflow: hidden;
-          box-shadow: 0 0 10px rgba(0, 247, 255, 0.1);
-      }
-      
-      .btn-web3-primary {
-          background: var(--gradient-main);
-          color: #000;
-          border: none;
           box-shadow: var(--glow-mix);
       }
-      .btn-web3-primary:hover {
-          box-shadow: 0 0 30px rgba(0, 247, 255, 0.6);
-          transform: translateY(-1px);
+      .btn-primary:hover {
+          box-shadow: 0 0 35px rgba(255, 45, 120, 0.6), 0 0 15px rgba(168, 85, 247, 0.4);
+          transform: translateY(-2px);
       }
 
-      .btn-web3:hover {
-          background: rgba(0, 247, 255, 0.1);
-          box-shadow: var(--glow-cyan);
-          text-shadow: 0 0 5px var(--neon-cyan);
+      .btn-outline {
+          position: relative;
+          font-family: var(--font-tech);
+          font-weight: bold;
+          color: var(--text-primary);
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          cursor: pointer;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+          overflow: hidden;
+      }
+      .btn-outline:hover {
+          background: rgba(255, 255, 255, 0.1);
+          border-color: var(--neon-purple);
+          box-shadow: var(--glow-purple);
+          transform: translateY(-2px);
       }
 
-      /* --- Интерактивные Карточки/Блоки --- */
-      .web3-card {
+      .card {
           background: var(--bg-surface);
-          border: 1px solid rgba(0, 247, 255, 0.1);
+          border: 1px solid rgba(168, 85, 247, 0.1);
           backdrop-filter: blur(12px);
           transition: all 0.4s ease;
           position: relative;
           overflow: hidden;
       }
 
-      .web3-card:hover {
-          border-color: rgba(157, 0, 255, 0.5);
-          box-shadow: 0 0 20px rgba(157, 0, 255, 0.15), inset 0 0 20px rgba(0, 247, 255, 0.05);
-          transform: translateY(-2px);
+      .card:hover {
+          border-color: rgba(255, 45, 120, 0.4);
+          box-shadow: 0 0 25px rgba(255, 45, 120, 0.1), inset 0 0 20px rgba(168, 85, 247, 0.05);
+          transform: translateY(-4px);
       }
-      
-      /* Светящаяся полоска сверху карточки при наведении */
-      .web3-card::before {
+
+      .card::before {
           content: '';
           position: absolute;
           top: 0; left: 0; width: 100%; height: 2px;
           background: var(--gradient-main);
-          opacity: 0.5;
+          opacity: 0.4;
           transition: opacity 0.5s ease;
       }
-      .web3-card:hover::before {
+      .card:hover::before {
           opacity: 1;
-          box-shadow: 0 0 10px var(--neon-cyan);
+          box-shadow: 0 0 10px var(--neon-pink);
       }
 
-      /* Custom scrollbar */
       ::-webkit-scrollbar {
         width: 6px;
         height: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: var(--bg-deep); 
+        background: var(--bg-deep);
       }
       ::-webkit-scrollbar-thumb {
-        background: #333; 
+        background: #333;
         border-radius: 3px;
-        border: 1px solid #444;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: var(--neon-purple); 
+        background: var(--neon-purple);
         box-shadow: 0 0 10px var(--neon-purple);
       }
 
-      /* Animations */
       @keyframes scanline {
           0% { top: -20%; opacity: 0; }
-          50% { opacity: 0.2; }
+          50% { opacity: 0.15; }
           100% { top: 120%; opacity: 0; }
       }
-      
+
       @keyframes pulse-glow {
-        0% { box-shadow: 0 0 5px var(--neon-cyan); }
-        50% { box-shadow: 0 0 20px var(--neon-cyan), 0 0 10px var(--neon-pink); }
-        100% { box-shadow: 0 0 5px var(--neon-cyan); }
+        0% { box-shadow: 0 0 5px var(--neon-pink); }
+        50% { box-shadow: 0 0 25px var(--neon-pink), 0 0 10px var(--neon-purple); }
+        100% { box-shadow: 0 0 5px var(--neon-pink); }
       }
-      
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+      }
+
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes countUp {
+        from { opacity: 0; transform: scale(0.5); }
+        to { opacity: 1; transform: scale(1); }
+      }
+
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+
       .animate-pulse-glow {
           animation: pulse-glow 3s infinite;
+      }
+
+      .hero-glow {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.3;
+        pointer-events: none;
+      }
+
+      .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--gradient-main);
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+      .nav-link:hover {
+        color: var(--neon-pink);
+      }
+
+      .pricing-popular {
+        border-color: var(--neon-pink) !important;
+        box-shadow: 0 0 30px rgba(255, 45, 120, 0.15);
+      }
+
+      .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        transition: all 0.3s ease;
       }
     </style>
   <script type="importmap">
@@ -200,8 +266,7 @@
     "react": "https://esm.sh/react@^19.2.1",
     "react/": "https://esm.sh/react@^19.2.1/",
     "lucide-react": "https://esm.sh/lucide-react@^0.559.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.32.0"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
   }
 }
 </script>
