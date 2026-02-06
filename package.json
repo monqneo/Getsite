@@ -1,7 +1,7 @@
 {
-  "name": "evoluton",
+  "name": "nagvalab",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,8 +11,7 @@
   "dependencies": {
     "react": "^19.2.1",
     "lucide-react": "^0.559.0",
-    "react-dom": "^19.2.1",
-    "@google/genai": "^1.32.0"
+    "react-dom": "^19.2.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
